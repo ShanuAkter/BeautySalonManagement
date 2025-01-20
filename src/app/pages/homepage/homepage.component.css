@@ -1,0 +1,167 @@
+:host{
+    margin: 0;
+}
+
+.banner {
+    position: relative
+}
+
+.banner-pic {
+    background-image: url("../../../assets/homePage/images/Service-Bg-01.jpg");
+    background-size: cover;
+    filter: blur(2.5px);
+    min-height: 90vh;
+}
+
+.banner-button {
+    position: absolute;
+    /* top: 20px; */
+    bottom: 120px;
+    left: 160px;
+
+}
+
+@media only screen and (max-width:768px) {
+    .banner-pic {
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+
+    .banner-button {
+        bottom: 80px;
+    }
+
+}
+
+
+.container {
+    margin-top: 80px;
+}
+
+.text-content {
+    display: flex;
+    align-items: top;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-4,
+    .col-md-8 {
+        max-width: 100%;
+    }
+
+    .text-content {
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
+
+.container2 {
+    text-align: center;
+    margin-top: 20px;
+    background-color: black;
+    padding: 20px;
+
+}
+
+.container2 p {
+    font-family: 'Lobster', cursive;
+
+    color: #fd3410;
+
+}
+
+.container2 h2 {
+    font-family: 'Lobster', cursive;
+
+    color: #ffffff;
+
+}
+
+
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.col-md-3 {
+    margin-bottom: 20px;
+
+}
+
+.card {
+    height: 24rem;
+
+}
+
+.fix-pic {
+    background-image: url("../../../assets/homePage/images/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 75vh;
+    background-size: cover;
+}
+
+.text-over {
+    
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+    background-color: transparent;
+    color: #150202;
+    width: 100%;
+}
+.text-down{
+   
+    width: auto;
+    margin-top: 40px;
+}
+
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .carousel {
+    margin-top: 50px;
+  }
+  
+  .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    color: #343a40;
+  }
+  
+  .card-subtitle {
+    color: #6c757d;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+  }
+  
+
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+}

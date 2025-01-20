@@ -1,0 +1,67 @@
+<div><app-navbar></app-navbar>
+    <div class="container">
+        <div class="bg-pic">
+            <div class="row">
+                <div class="col-md-6 content">
+                    <div class="context">
+                        <h1 class="h1"><br><br>Meet Our Excellent Team</h1><br><br>
+                        <h2>Be the Girl You always wanted to be with Soft Touch</h2>
+                        <p>Flaunt your every flaws that is strength of  your life . it is you what matter the most . we
+                            care
+                            for your every flasw to be flaunted.</p>
+                    </div>
+                    <button (click)="onBookAppointment()" routerLink="/appointment" class="ms-5 btn btn-dark">
+                        .. Book Appoinment
+
+                    </button>
+                </div>
+                
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+
+        <div class="Expert1">
+            <h1> Meet Our  Experts </h1>
+
+        </div>
+        <div class="row" *ngFor="let expert of experts">
+            <div class="col-md-6">
+                <div class="hairexpert">
+                    <p class="text">{{ experts.imgurl1 }}</p>
+                    <img [src]="expert.imgurl1" alt="{{ expert.name }}">
+                </div>
+            </div>
+            <div class="col-md-6 ">
+
+                <h3 class="text name">{{ expert.name }}</h3>
+                <h5 class="text expert">{{ expert.specialty }}</h5>
+                <p class="text">{{ expert.contactInformation }}</p>
+                <p> 15 years in the beauty industry, Ella specializes in Blondes, Extensions, Haircuts, Gray coverage
+                    and Bridal beauty.
+                    Hair is all I know, I live it and even dream it!. I have been hairdressing for 13 years now, time
+                    flies when your having fun ;-). Becoming a salon owner is a dream come true and having an amazing
+                    group of experts alongside me is even better, making one big salon family. I started my career from
+                    school, I then worked for a few different salons, along the way entered some hair competitions which
+                    then found me being head hunted to work in Ashford for about 4 years where I attended redken
+                    courses. From here I came back to my hometown of Deal. I later began to think what it would be like
+                    working for myself and pursued my goal in doing so, where it led me to finding this fabulous
+                    premises. <br>
+                    Click link below for appointments with Tiffany.</p>
+                    <button (click)="onBookAppointment()" routerLink="/appointment" class="btn btn-dark">
+                        .. Book Appoinment
+
+                    </button>
+                
+
+            </div>
+        </div>
+
+
+
+        
+    </div>
+
+
+
+    <app-footer></app-footer>
+</div>

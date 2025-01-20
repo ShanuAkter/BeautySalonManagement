@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-5">
+    <h2 class="text-center">Gallery</h2>
+
+    <!-- Gallery Images -->
+    <div class="row">
+        <div class="col-md-4" *ngFor="let image of images">
+            <div class="card mb-4">
+                <img src="{{ image.imageUrl }}" class="card-img-top" alt="{{ image.title }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ image.title }}</h5>
+                    <!-- <p class="card-text">{{ image.description }}</p> -->
+                    <!-- <button class="btn btn-danger btn-sm" (click)="deleteImage(image.id)">Delete</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Image Form -->
+    <!-- <div>
+        <h3>{{ isEditMode ? 'Edit Image' : 'Add Image' }}</h3>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" [(ngModel)]="image.title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" [(ngModel)]="image.description"
+                    name="description" required>
+            </div>
+            <div class="form-group">
+                <label for="imageUrl">Image URL</label>
+                <input type="text" class="form-control" id="imageUrl" [(ngModel)]="image.imageUrl" name="imageUrl"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-success">{{ isEditMode ? 'Update Image' : 'Add Image' }}</button>
+        </form>
+    </div> -->
+</div>
+
+
+
+<app-footer></app-footer>

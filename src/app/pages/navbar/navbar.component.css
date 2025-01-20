@@ -1,0 +1,30 @@
+.marquee {
+    color: #7f1d0c;
+    font-size: xx-large;
+    position: relative;
+    animation: moveText 20s linear infinite;
+}
+
+.navbar-nav .nav-item+.nav-item {
+    margin-left: 15px;
+    font-size: large;
+    font-family: 'Lucida Sans';
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.nav-link svg {
+    margin: 0 10px;
+}

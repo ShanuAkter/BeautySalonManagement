@@ -1,0 +1,34 @@
+.home-header{
+    background-image: url("../../../assets/homePage/images/enhance.png");
+    background-size: cover;
+    min-height: 90vh;
+}
+
+.home-header h3{
+    color: rgb(187, 28, 87);
+    text-shadow: 0 0 2px tomato;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    font-family: 'Lobster', cursive;
+}
+
+.home-header p {
+    color: rgb(3, 3, 25);
+    text-shadow: 0 0 2px rgb(118, 189, 222);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width:768px) {
+    .home-header {
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+
+
+}

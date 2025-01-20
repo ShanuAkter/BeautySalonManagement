@@ -1,0 +1,122 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="home-header">
+    <div class="card home-header">
+        <div class="card-body">
+            <h3 class="card-title">Enhance Your NAtural Beauty <br> With OUr Soft TouCh</h3>
+            <p class="card-text">Less make-up is better,<br>
+                 and it's always better to let your natural beauty shine.<br>
+               Do makeup to make ownself happy, not others.</p>
+        </div>
+
+    </div>
+    <div>
+
+
+    </div>
+    <div>
+        <h2>Our SErVices</h2>
+        <div class="row">
+            <div class="col-md-3" *ngFor="let p of products">
+                <div class="card"> <img [src]="p.imgurl1" class="card-img-top"
+                        alt="NailExtension">
+                    <div class="card-body">
+                        <p class="card-text">{{p.productname}}</p>
+                        <p class="card-text">${{p.price}}</p>
+                    </div>
+                </div>
+            </div>
+     
+     
+         
+        </div>
+
+
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-4"> <img src="../assets/homePage/images/hairTrim.png" alt="Time for Change"
+                    class="img-fluid"> </div>
+            <div class="col-md-8 text-content">
+                <div class="container">
+                    <h1>FOr YOUR HAIR</h1>
+                    <p> As the premier beauty salon in Dhanmondi, we love connecting with new members from our community
+                        every day. With a relaxing atmosphere and exceptional attention to detail, we provide all our
+                        clients
+                        with an experience they crave coming back for. Let us create a look to showcase your unique
+                        individuality. We help discover the designs that accentuate your natural features while staying true
+                        to
+                        your personal style. If you’re thinking about what style to go for next, speak to your stylist,
+                        together
+                        we can find your perfect new look. </p>
+    
+                </div>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"> <img src="../assets/homePage/images/fairpolish.png" alt="Time for Change"
+                    class="img-fluid"> </div>
+            <div class="col-md-8 text-content">
+                <div class="container">
+                    <h1>For YOUr NaiL</h1>
+                    <p> As the premier beauty salon in Dhanmondi, we love connecting with new members from our community
+                        every day. With a relaxing atmosphere and exceptional attention to detail, we provide all our
+                        clients
+                        with an experience they crave coming back for. Let us create a look to showcase your unique
+                        individuality. We help discover the designs that accentuate your natural features while staying true
+                        to
+                        your personal style. If you’re thinking about what style to go for next, speak to your stylist,
+                        together
+                        we can find your perfect new look. </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"> <img src="../assets/homePage/images/henna1.png" alt="Time for Change"
+                    class="img-fluid"> </div>
+            <div class="col-md-8 text-content">
+                <div class="container">
+                    <h1>DO HEnna WIth Us</h1>
+                    <p> As the premier beauty salon in Dhanmondi, we love connecting with new members from our community
+                        every day. With a relaxing atmosphere and exceptional attention to detail, we provide all our
+                        clients
+                        with an experience they crave coming back for. Let us create a look to showcase your unique
+                        individuality. We help discover the designs that accentuate your natural features while staying true
+                        to
+                        your personal style. If you’re thinking about what style to go for next, speak to your stylist,
+                        together
+                        we can find your perfect new look. </p>
+    
+                </div>
+               
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"> <img src="../assets/homePage/images/ourservices.jpg" alt="Time for Change"
+                    class="img-fluid"> </div>
+            <div class="col-md-8 text-content">
+                <div class="container">
+                    <h1>WE Care Your Face</h1>
+                    <p> As the premier beauty salon in Dhanmondi, we love connecting with new members from our community
+                        every day. With a relaxing atmosphere and exceptional attention to detail, we provide all our
+                        clients
+                        with an experience they crave coming back for. Let us create a look to showcase your unique
+                        individuality. We help discover the designs that accentuate your natural features while staying true
+                        to
+                        your personal style. If you’re thinking about what style to go for next, speak to your stylist,
+                        together
+                        we can find your perfect new look. </p>
+    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

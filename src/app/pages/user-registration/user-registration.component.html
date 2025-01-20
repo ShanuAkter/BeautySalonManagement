@@ -1,0 +1,30 @@
+<div class="bg-pic">
+<div class="main-w3layouts wrapper">
+
+    <div class="main-agileinfo">
+        <div class="agileits-top">
+            <form class="form-bg">
+                <h1>Hello Gorgeous!</h1>
+                <p>"You Don't Have to be perfect To BE Beautiful" </p>
+                <input class="text" type="text" name="firstName" placeholder="First Name"  required [(ngModel)]="user.firstName">
+                <input class="text " type="text" name="lastName" placeholder="Last Name" required [(ngModel)]="user.lastName" >
+                <input class="text " type="text" name="age" placeholder="Age" required [(ngModel)]="user.age" >
+                <input class="email " type="email" name="email" placeholder="Email" required [(ngModel)]="user.email" >
+                <input class="text" type="password" name="password" placeholder="Password" required [(ngModel)]="user.password" >
+                <input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required [(ngModel)]="user.confirmPassword">
+                <div class="wthree-text">
+                    <label class="anim">
+                        <input type="checkbox" class="checkbox" required="">
+                        <span>I Agree To The Terms & Conditions</span>
+                    </label>
+                    <div class="clear"> </div>
+                </div>
+                <button (click)="onRegistration()">Submit</button>
+            
+            </form>
+            <p>Don't have an Account? <a> Login Now!</a></p>
+        </div>
+    </div>
+
+</div>
+</div>

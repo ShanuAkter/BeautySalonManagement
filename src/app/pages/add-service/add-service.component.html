@@ -1,0 +1,18 @@
+<div class="container">
+
+    <form>
+
+        <div class="form-group"> <label for="serviceName">ServiceName:</label> <input type="text" class="form-control"
+                id="name" name="name" [(ngModel)]="services.serviceName"> </div>
+        <div class="form-group"> <label for="servicePrice">servicePrice:</label> <input type="number"
+                class="form-control" id="price" name="price" [(ngModel)]="services.servicePrice"> </div>
+        <div class="form-group"> <label for="description">Description:</label> <input type="text" class="form-control"
+                id="description" name="description" [(ngModel)]="services.serviceDescription"> </div>
+        <div class="form-group"> <label for="imageUrl">serviceImage:</label> <input type="text" class="form-control"
+                id="imgUrl" name="imageUrl" [(ngModel)]="services.serviceImage"> </div>
+        <div class="form-group"> <label for="expertName">ExpertName:</label> <input type="text" class="form-control"
+                id="expert" name="expert" [(ngModel)]="services.serviceExpert"> </div>
+
+        <button (click)="onAddService() " class="btn btn-success">Submit</button>
+    </form>
+</div>

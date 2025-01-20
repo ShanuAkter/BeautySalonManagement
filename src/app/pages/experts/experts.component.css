@@ -1,0 +1,48 @@
+.bg-pic {
+    background-image: url( "../../../assets/homePage/images/we.png");
+    background-size: cover;
+   
+    min-height: 90vh;
+}
+
+ .context{
+    margin-top: 20px;
+    margin-left: 50px;
+    color: rgb(224, 224, 224);
+
+ }
+
+ .Expert1{
+    margin-top: 50px;
+    margin-left:400px;
+    margin-bottom: 100px;
+    font-family: 'Lobstar',cursive;
+    color: palevioletred;
+  
+ }
+
+
+ .hairexpert{
+    
+    color: bisque;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+ }
+ .name{
+    margin-top: 50px;
+    color: rgb(240, 33, 150);
+ }
+ .expert{
+    margin-top: 10px;
+    color: rgb(137, 50, 95);
+ }
+
+ .banner-button {
+    position: absolute;
+    /* top: 20px; */
+    bottom: 120px;
+    left: 160px;
+
+}

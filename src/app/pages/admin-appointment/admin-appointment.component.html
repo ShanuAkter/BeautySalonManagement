@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="title-box">
+        <h1>Our Products</h1>
+    </div>
+
+    <table class="table table-bordered grocery-crud-table table-hover">
+        <thead>
+            <tr>
+                <th>Customer ID</th>
+                <th>Customer Name</th>
+                <th>Service Name</th>
+                <th>Service Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    5001
+                </td>
+                <td>
+                    Amatullah Ayat</td>
+                <td>
+                    Hair Cut</td>
+                <td>
+                    A classic short hairstyle. 
+                  
+                </td>
+                <td>
+                    <a button (click)="onViewAppointment()" class="btn btn-info ">View</a>
+                    <a button (click)="onAcceptAppointment()" class="btn  btn-success ">Accept</a>
+                    <a button (click)="onDeleteAppointment()" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</div>

@@ -1,0 +1,101 @@
+.bg-pic {
+    background-image: url("../../../assets/homePage/images/book-img2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.h3 {
+    font-family: 'Lobstar',cursive;
+    font-size: medium;
+
+}
+
+/* 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #252839;
+
+} */
+
+h2 {
+    position: relative;
+    font-size: 3.5vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #ab4806dd;
+    text-transform: uppercase;
+}
+
+h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #000c07;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #feaa01;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+.appointment-form {
+    max-width: 500px;
+    margin: 10px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+.bg-pic1 {
+    
+
+    background-image: url("../../../assets/homePage/images/makeup1.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.button {
+    color: rgb(245, 196, 133);
+}

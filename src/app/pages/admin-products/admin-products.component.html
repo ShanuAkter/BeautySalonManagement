@@ -1,0 +1,41 @@
+
+
+
+<div class="container">
+    <div class="title-box">
+        <h1>Our Products</h1>
+    </div>
+
+    <a  routerLink="/addProduct" button (click)="onAddNewProduct()" class="btn btn-primary mb-2" >
+        <b>+</b> Add New Product</a>
+          
+    <table class="table table-bordered grocery-crud-table table-hover ">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th >Product Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of beautyProducts">
+                <td>
+                   {{product.id }}
+                </td>
+                <td>
+                    {{product.name }}</td>
+                <td>
+                    ${{product.price }}</td>
+                <td>
+                    {{product.description }}
+                 </td>
+                <td>
+                    <a button (click)="onUpdateProduct()" class="btn btn-warning me-1">Update</a>
+                    <a button (click)="onDeleteProduct(product.id)" class="btn btn-danger" >Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

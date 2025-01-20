@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="title-box">
+        <h1>Our Services</h1>
+    </div>
+
+    <a routerLink="/addservice" button (click)="onAddNewService()" class="btn btn-primary mb-2">
+        <b>+</b> Add New Service</a>
+
+    <table class="table table-bordered grocery-crud-table table-hover">
+        <thead>
+            <tr>
+                <th>Service ID</th>
+                <th>Service Name</th>
+                <th>Service Expert</th>
+                <th>Service Price</th>
+                <th>Service Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr *ngFor="let service of services">
+                <td>
+                    {{ service.id }}
+                </td>
+                <td>
+                    {{service.serviceName }}
+                </td>
+                <td>
+                    {{service.serviceExpert }}
+                </td>
+                <td>
+                    ${{service.servicePrice }}
+                </td>
+                <td>
+                    {{service.serviceDescription }}
+                </td>
+                <td>
+                    <a routerLink="/addservice" button (click)="onUpdateService()" class="btn btn-warning me-1 ">Update</a>
+                    <a button (click)="onDeleteService(service.id)" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

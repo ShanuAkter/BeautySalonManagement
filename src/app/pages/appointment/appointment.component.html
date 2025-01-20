@@ -1,0 +1,65 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="bg-pic1">
+        <div> <br><br><br><br><br><br>
+            <h2 data-text="...Book Appoinment">...Book Appoinment</h2>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bg-pic"></div>
+            <div>
+                <h4>To Grab Our Best Services get Your Appinment.</h4>
+                <h3>Don't Miss the Chance </h3>
+                <h4>Now Our services at your Door .To know more <button type="button" class="btn-btn-primary">click
+                        here..</button></h4>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="appointment-form">
+                <h1 class="text-center">Book an Appointment</h1>
+                <form>
+                    <!-- <div class="form-group"> <label for="userid">User ID:</label> <input type="text" class="form-control"
+                            id="userid" required name="userid" [(ngModel)]="appointments.userId"> </div> -->
+                    <div class="form-group"> <label for="name">Name:</label> <input type="text" class="form-control"
+                            id="name" required name="name" [(ngModel)]="appointments.name"> </div>
+                    <div class="form-group"> <label for="email">Email:</label> <input type="email" class="form-control"
+                            id="email" required name="email" [(ngModel)]="appointments.email"> </div>
+                    <div class="form-group"> <label for="phone">Phone:</label> <input type="tel" class="form-control"
+                            id="phone" required name="phone" [(ngModel)]="appointments.phone"> </div>
+                    <div class="form-group"> <label for="service">Service:</label> <select class="form-control"
+                            id="service" required name="service" [(ngModel)]="appointments.service">
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="haircut">Haircut</option>
+                            <option value="bridal">Bridal</option>
+                            <option value="color">Color</option>
+                            <option value="nail">NAil</option>
+                            <option value="spa">spa</option>
+                            <option value="styling">Styling</option>
+                            <option value="manicure">Manicure</option>
+                            <option value="pedicure">Pedicure</option>
+                        </select> 
+                    </div>
+                    
+
+                    <div class="form-group"> <label for="coupon">Coupon Code:</label> <input type="text"
+                            class="form-control" id="coupon" required name="coupon" [(ngModel)]="appointments.coupon"> </div>
+                    <div class="form-group"> <label for="date">Date:</label> <input type="date" class="form-control"
+                            id="date" required name="date" [(ngModel)]="appointments.date"> </div>
+                    <div class="form-group"> <label for="time">Time:</label> <input type="time" class="form-control"
+                            id="time" required name="time" [(ngModel)]="appointments.time"> </div> 
+                            <button (click)="onConfirmSubmit()">Confirm Appoinment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<app-footer></app-footer>

@@ -1,0 +1,122 @@
+<app-navbar></app-navbar>
+<div class="container mt-5">
+  <h1 class="text-center">Our Products</h1>
+  <div class="d-flex justify-content-between" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search Your Product" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+
+  </div>
+
+  <!-- <div class="container">
+    <div class="explore-menu" id="explore-menu">
+      <h2>Explore Menu</h2>
+      <p class="explore-menu-text">Explore our menu and enjoy your meal.</p>
+      <div class="explore-menu-list">
+
+
+        <div class="menu-item">
+          <div class="explore-menu-item">
+            <img src="../assets/homePage/images/oilmessage.png" alt="Food Image">
+          </div>
+         
+        </div>
+
+      </div>
+    </div>
+    <hr class="food-item-hr d-none d-md-block">
+  </div>
+ --> 
+
+
+
+  <div class="mb-4">
+
+    <h3 class="text-common">Find Your Favourite Shades in Lipsticks</h3>
+
+    <div class="row">
+      <div class="col-md-3 d-flex justify-content-between" *ngFor="let product of beautyProducts">
+        <div class="card"> <img [src]="product.imgUrl" class="card-img-top" width="50" alt="{{ product.name }}">
+          <div class="card-body">
+            <p class="card-text">{{product.name }}</p>
+            <!-- <p class="card-text">{{product.description}}</p> -->
+            <div class="d-flex justify-content-between">
+              <p class="card-text-t d">${{ product.price}}</p>
+              <!-- <p class="card-text">{{product.stock }}</p> -->
+
+              <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" (click)="selectItem(product)">Buy Now</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- <img [src]="selectItem?.imgUrl" style="width: 100%; height: 200px;" alt="Food Image"> -->
+            <!-- <img [src]="product.imgUrl" style="width: 100%; height: 200px;" alt="Food Image"> -->
+            <p class="food-item-description">description</p>
+            <h4 class="food-item-price">price</h4>
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10">
+            <!-- <input type="number" id="quantity" name="quantity" min="1" max="10" [(ngModel)]="quantity"> -->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success">Order Now</button>
+            <button type="button" class="btn btn-primary">Add to Cart</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</div>
+
+
+
+
+
+<app-footer></app-footer>
+
+<!-- <table class="table table-striped"> -->
+
+<!-- <thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Image</th>
+        <th>Actions</th>
+    </tr>
+
+    
+            <tbody>
+                <tr *ngFor="let product of beautyProducts">
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.description }}</td>
+                    <td>{{ product.price }}</td>
+                    <td>{{ product.stock }}</td>
+                    <td><img [src]="product.imgUrl" alt="{{ product.name }}" width="50"></td>
+
+                </tr>
+            </tbody>
+</thead> -->
+<!-- </table> -->
